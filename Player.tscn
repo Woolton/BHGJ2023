@@ -1,6 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://subtpgk8itjx"]
+[gd_scene load_steps=6 format=3 uid="uid://wg7ieiylivnf"]
 
-[ext_resource type="Script" path="res://Player.cs" id="1_1qped"]
+[ext_resource type="Script" path="res://Scripts/Player.cs" id="1_qrfy1"]
 [ext_resource type="Texture2D" uid="uid://cuj34jex7d04d" path="res://Reimu_edit.png" id="2_8swj6"]
 
 [sub_resource type="Animation" id="Animation_qxdx7"]
@@ -41,7 +41,7 @@ _data = {
 }
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_1qped")
+script = ExtResource("1_qrfy1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_8swj6")
