@@ -6,6 +6,7 @@ public partial class Enemy : Node
 	#region Variables
 		[Export]
 		public int Health{get;set;}=2;
+		[Export]
 		public int Speed{get;set;}=2;
 
 		//guns (list)
@@ -26,30 +27,30 @@ public partial class Enemy : Node
 	{
 	}
 	#region Methods
-		void Attack()
+		public void Attack()
 		{
 			//for each gun in Guns, fire(firepattern)
 		}
 
-		void Move()
+		public void Move()
 		{
 			//follow path
 		}
 
-		void Die()
+		public void Die()
 		{
 			//called from onHealthZero()
 			//death procedure
 		}
 
 		//signals/observer shit
-		void onHit()
+		public void onHit()
 		{
 			//when a bullet enters the hitbox
 			//subtract some health
 		}
 
-		void onHealthZero()
+		public void onHealthZero()
 		{
 			//when health = 0, Die()
 			//or do something else cool

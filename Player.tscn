@@ -40,7 +40,7 @@ _data = {
 "idle": SubResource("Animation_w3uty")
 }
 
-[node name="Node2D" type="Node2D"]
+[node name="Player" type="Node2D"]
 script = ExtResource("1_qrfy1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -52,3 +52,5 @@ vframes = 5
 libraries = {
 "": SubResource("AnimationLibrary_7tfl2")
 }
+
+[node name="Gun" type="Node2D" parent="."]

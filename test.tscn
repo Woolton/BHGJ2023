@@ -1,8 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://x2mt1x41tw0t"]
+[gd_scene load_steps=4 format=3 uid="uid://x2mt1x41tw0t"]
 
-[ext_resource type="PackedScene" uid="uid://subtpgk8itjx" path="res://Player.tscn" id="1_phjj1"]
+[ext_resource type="PackedScene" uid="uid://wg7ieiylivnf" path="res://Player.tscn" id="1_phjj1"]
+[ext_resource type="Curve2D" uid="uid://cq4n8g2pmrabn" path="res://curvea.tres" id="2_3he2k"]
+[ext_resource type="PackedScene" uid="uid://14os02d7kv8h" path="res://mob.tscn" id="2_em0tk"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Node2D" parent="." instance=ExtResource("1_phjj1")]
 position = Vector2(592, 334)
+
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2(109, 64)
+curve = ExtResource("2_3he2k")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(339.03, 286.508)
+rotation = -6.28319
+progress = 365.678
+rotates = false
+
+[node name="Node2D2" parent="Path2D/PathFollow2D" instance=ExtResource("2_em0tk")]
+position = Vector2(0.211914, -0.162537)
