@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://cfgcdvpt6pj54"]
+
+[ext_resource type="Script" path="res://Bullet.cs" id="1_lninv"]
+[ext_resource type="Texture2D" uid="uid://bdbh543odiyoa" path="res://PC Computer - Touhou Kikeijuu Wily Beast and Weakest Creature - Enemy Sprites.png" id="2_vlrjf"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_agxba"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54d46"]
+atlas = ExtResource("2_vlrjf")
+region = Rect2(132, 1809, 22, 19)
+
+[node name="Bullet" type="Area2D"]
+script = ExtResource("1_lninv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_agxba")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_54d46")

@@ -8,7 +8,7 @@ public partial class Mob : Enemy
 	public override void _Ready()
 	{
 		Follower = GetParent<PathFollow2D>();
-		Speed = 400;
+
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -17,7 +17,7 @@ public partial class Mob : Enemy
 		
 		Follower.Progress += Speed * (float)delta;
 
-		GD.Print(Follower.ProgressRatio);
+		//GD.Print(Follower.ProgressRatio);
 	}
 	
 

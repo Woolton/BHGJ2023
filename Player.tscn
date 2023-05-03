@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://wg7ieiylivnf"]
+[gd_scene load_steps=7 format=3 uid="uid://wg7ieiylivnf"]
 
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="1_qrfy1"]
 [ext_resource type="Texture2D" uid="uid://cuj34jex7d04d" path="res://Reimu_edit.png" id="2_8swj6"]
+[ext_resource type="PackedScene" uid="uid://mt8u05xxf6el" path="res://gun.tscn" id="3_lde3v"]
 
 [sub_resource type="Animation" id="Animation_qxdx7"]
 length = 0.001
@@ -53,4 +54,4 @@ libraries = {
 "": SubResource("AnimationLibrary_7tfl2")
 }
 
-[node name="Gun" type="Node2D" parent="."]
+[node name="Gun" parent="." instance=ExtResource("3_lde3v")]
