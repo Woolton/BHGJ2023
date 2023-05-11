@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://14os02d7kv8h"]
+[gd_scene load_steps=4 format=3]
 
 [ext_resource type="Texture2D" uid="uid://b64rn22aphdeu" path="res://touhou_cop_edit.png" id="1_2urft"]
 [ext_resource type="Script" path="res://Scripts/Mob.cs" id="1_uobai"]
-[ext_resource type="PackedScene" uid="uid://mt8u05xxf6el" path="res://gun.tscn" id="3_0oy3g"]
+[ext_resource type="PackedScene" uid="uid://cav5ch2vjk5ik" path="res://Scenes/gun.tscn" id="3_0oy3g"]
 
 [node name="Mob" type="Node2D"]
 script = ExtResource("1_uobai")

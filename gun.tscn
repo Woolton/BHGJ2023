@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://mt8u05xxf6el"]
-
-[ext_resource type="Script" path="res://Gun.cs" id="1_vsf35"]
-[ext_resource type="PackedScene" uid="uid://cfgcdvpt6pj54" path="res://bullet.tscn" id="2_txvxp"]
-
-[node name="Gun" type="Node2D"]
-script = ExtResource("1_vsf35")
-
-[node name="Bullet" parent="." instance=ExtResource("2_txvxp")]

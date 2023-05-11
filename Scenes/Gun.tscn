@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6qh3w4m0icsv"]
+
+[ext_resource type="Script" path="res://Scripts/Gun.cs" id="1_ukn1t"]
+[ext_resource type="PackedScene" uid="uid://cfgcdvpt6pj54" path="res://Scenes/bullet.tscn" id="2_qawv2"]
+
+[node name="Gun" type="Node2D"]
+script = ExtResource("1_ukn1t")
+_Bullet = ExtResource("2_qawv2")
+BulletSpeed = 40
