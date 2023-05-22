@@ -20,7 +20,7 @@ public partial class Enemy : ACharacter
         throw new NotImplementedException();
     }
 
-    public override void Shoot()
+    protected override void OnShoot()
     {
         throw new NotImplementedException();
     }

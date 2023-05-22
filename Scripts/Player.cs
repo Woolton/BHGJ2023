@@ -11,6 +11,8 @@ public partial class Player : ACharacter
 	{
 		ShiftSpeed = Speed * 0.4f;
 		ScreenSize = GetViewportRect().Size;
+
+		Shoot += Test_OnShoot;
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -29,7 +31,7 @@ public partial class Player : ACharacter
 		{
 			//streamfire
 			GD.Print("machinegun");
-			Shoot();
+			OnShoot();
 		}
 		if(Input.IsActionJustPressed("b_shot"))
 		{
@@ -83,13 +85,23 @@ public partial class Player : ACharacter
 		Position += velocity * (float)delta;
     }
 
-    public override void Shoot()
+    protected override void OnShoot()
     {
-        throw new NotImplementedException();
+        base.OnShoot();
     }
 
     public override void Die()
     {
         throw new NotImplementedException();
     }
+
+    public override void onHit()
+    {
+        throw new NotImplementedException();
+    }
+
+	private void Test_OnShoot(object sender, EventArgs e)
+	{
+		GD.Print("success");
+	}
 }

@@ -14,11 +14,34 @@ public partial class Mob : Enemy
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		
-		Follower.Progress += Speed * (float)delta;
+		Move(delta);
 
-		//GD.Print(Follower.ProgressRatio);
+		OnShoot();
 	}
 	
+	public override void Move(double delta)
+	{
+		Follower.Progress += Speed * (float)delta;
+
+		//GD.Print(Follower.ProgressRatio);'
+	}
+
+	protected override void OnShoot()
+	{
+		//fixed shot sample
+		/*
+			wait x frames/seconds
+			make gun face character position
+			base.shoot
+			repeat
+		*/
+
+
+		//aimed shot sample
+		/*
+			wait x frames/seconds
+			base.shoot
+		*/
+	}
 
 }

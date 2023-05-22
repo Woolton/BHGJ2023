@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="1_qrfy1"]
 [ext_resource type="Texture2D" uid="uid://cuj34jex7d04d" path="res://Reimu_edit.png" id="2_8swj6"]
-[ext_resource type="PackedScene" uid="uid://b6qh3w4m0icsv" path="res://Scenes/gun.tscn" id="3_lde3v"]
+[ext_resource type="PackedScene" uid="uid://b6qh3w4m0icsv" path="res://Scenes/Gun.tscn" id="3_lde3v"]
 
 [sub_resource type="Animation" id="Animation_qxdx7"]
 length = 0.001

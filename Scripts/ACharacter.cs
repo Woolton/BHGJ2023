@@ -17,6 +17,9 @@ public abstract partial class ACharacter : Node2D
 	public int GunCount{get;set;}//amount of guns the character has
 	protected float ShiftSpeed;
 	public Vector2 ScreenSize;
+
+	public event EventHandler Shoot;
+
 	#endregion
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -29,8 +32,6 @@ public abstract partial class ACharacter : Node2D
 	}
 	#region Abstract methods
 		public abstract void Move(double delta);//return position on button press
-
-		public abstract void Shoot();//return "shot" on button press
 
 		public abstract void Die();//return some die mesage
 
@@ -45,6 +46,9 @@ public abstract partial class ACharacter : Node2D
 			Die();
 		}
 	}
-
+	protected virtual void OnShoot()
+		{
+			Shoot?.Invoke(this,EventArgs.Empty);
+		}//return "shot" on button press
 
 }
